@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "jquery": "^3.6.1",
+    "jquery-mask-plugin": "^1.14.16"
+  },
+  "name": "jogos-jogados",
+  "description": "[x] - Wireframe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpn-leandro/jogos-jogados.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lpn-leandro/jogos-jogados/issues"
+  },
+  "homepage": "https://github.com/lpn-leandro/jogos-jogados#readme"
+}
