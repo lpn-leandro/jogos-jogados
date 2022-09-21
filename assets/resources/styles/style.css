@@ -1,0 +1,7 @@
+@import url("http://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("/node_modules/bootstrap/dist/css/bootstrap.css");
+
+.teal {
+    background-color: rgb(41, 135, 141);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
