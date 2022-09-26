@@ -1,7 +1,61 @@
 @import url("http://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("/node_modules/bootstrap/dist/css/bootstrap.css");
 
+
 .teal {
-    background-color: rgb(41, 135, 141);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: rgb(41, 135, 141);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.main-button{
+  background: #17A2B8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+    color: #ffffff;
+}
+
+.login-bg {
+  position: absolute;
+  width: 454px;
+  height: 376px;
+  left: 493px;
+  top: 346px;
+
+  background: #e9ecef;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.back {
+  background: #e2e2e2;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.div-center {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 1em 2em;
+  border-bottom: 2px solid #ccc;
+  display: table;
+}
+
+div.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.grey{
+  background: #E9ECEF;
 }
