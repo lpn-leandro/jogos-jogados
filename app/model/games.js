@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 export function Games(gamename, platform, gamestatus, notes) {
   this.gamename = gamename;
   this.platform = platform;

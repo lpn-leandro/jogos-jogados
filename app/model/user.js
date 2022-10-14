@@ -1,8 +1,9 @@
+'use strict';
 export class User {
   constructor( username, password, games = []) {
     this.username = username;
     this.password = password;
-    this.games = games;
+    this.games = [];
   }
 
   addGames(games) {

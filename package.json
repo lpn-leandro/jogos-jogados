@@ -2,7 +2,8 @@
   "dependencies": {
     "bootstrap": "^5.2.1",
     "jquery": "^3.6.1",
-    "jquery-mask-plugin": "^1.14.16"
+    "jquery-mask-plugin": "^1.14.16",
+    "jslint": "^0.12.1"
   },
   "name": "jogos-jogados",
   "description": "[x] - Wireframe",
