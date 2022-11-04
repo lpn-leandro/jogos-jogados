@@ -11,7 +11,87 @@
     <div id="navbar"></div>
 
     <main>
-      <h2>Section title</h2>
+      <h2>Visualize o Status dos seus jogos abaixo</h2>
+      <button
+        type="button"
+        class="btn btn-primary editar"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        Novo Jogo
+      </button>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Cadastre um novo jogo
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="game-name" class="col-form-label">Nome:</label>
+                  <input type="text" class="form-control" id="recipient-name" />
+                </div>
+                <div class="mb-3">
+                  <label for="game-status" class="col-form-label"
+                    >Status:</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Selecione o status</option>
+                    <option value="1">Finalizado</option>
+                    <option value="2">Abandonado</option>
+                    <option value="3">Lista de Desejos</option>
+                    <option value="4">Jogando</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="game-status" class="col-form-label"
+                    >Plataforma:</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Selecione o status</option>
+                    <option value="1">PC</option>
+                    <option value="2">PS5</option>
+                    <option value="3">Xbox One</option>
+                    <option value="4">Nintendo Switch</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Send message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -49,39 +129,11 @@
         </table>
       </div>
     </main>
-    
-    <button type="button" class="btn btn-primary editar" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="mb-3">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
-    </div>
-  </div>
-</div>
 
     <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script src="/node_modules/jquery-mask-plugin/dist/jquery.mask.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script type="module" src="/app/pages/home/home.js"></script>    
+    <script type="module" src="/app/pages/home/home.js"></script>
     <script type="module" src="/app/util/shared.js"></script>
   </body>
 </html>
