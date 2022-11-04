@@ -6,8 +6,7 @@ const LOGGED_IN_KEY = 'eh_logado';
 $(function (){
     let isLoggedIn = localStorage.getItem(LOGGED_IN_KEY);
 
-    let navbar = isLoggedIn ? '/navbar.html' : '/navbar-anon.html';
-    $('#navbar').load(navbar);
+    $('#navbar').load('/navbar.html');
     $('#footer').load('/footer.html');
 });
 

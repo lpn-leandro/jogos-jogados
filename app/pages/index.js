@@ -1,6 +1,6 @@
 'use strict';
 
-import { LOGGED_IN_KEY, USERNAME_KEY } from '../util/shared.js';
+import {LOGGED_IN_KEY, USERNAME_KEY} from '../util/shared.js';
 
 //usuário definido na forma literal
 function inicializaUsuarios() {
