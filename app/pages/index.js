@@ -9,7 +9,7 @@ function inicializaUsuarios() {
   }
 
   //usuário definido na forma literal
-  var user = {
+  const user = {
     username: USERNAME_KEY,
     password: '123456789',
   };
@@ -22,11 +22,10 @@ function inicializaUsuarios() {
  * Apresenta ou esconde o painel de operações de acordo com o estado de login.
  */
 function showOperations() {
-  var isLoggedIn = localStorage.getItem(LOGGED_IN_KEY);
+  let isLoggedIn = localStorage.getItem(LOGGED_IN_KEY);
 
   if (isLoggedIn === 'true') {
-    $('#painel-login').hide();
-    $('#painel-servicos').fadeIn();
+    
   }
 }
 
@@ -49,11 +48,11 @@ window.onload = function () {
 
 document.querySelector('#login').onclick = function () {
   window.alert('Confirme que você não é um robo');
-  let valor;
+  let value;
   let confirmacao;
-  valor = parseInt(window.prompt('Confirme que você não é um robo: 7 + 4 = ?'));
+  value = parseInt(window.prompt('Confirme que você não é um robo: 7 + 4 = ?'));
   confirmacao = window.confirm('Deseja continuar?');
-  if (valor === 11 && confirmacao === true) {
+  if (value === 11 && confirmacao === true) {
     window.open('/home.html', '_SELF');
   } else {
     window.alert('Captcha incorreto e/ou confirmação negada. Tente novamente!');
