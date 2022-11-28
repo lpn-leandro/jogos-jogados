@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg" href="favicon.svg" />
+    <link rel="stylesheet" href="/assets/resources/styles/style.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <main>
+      <h2>Visualize o Status dos seus jogos abaixo</h2>
+      <button
+        type="button"
+        class="btn btn-primary editar"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        Novo Jogo
+      </button>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Cadastre um novo jogo
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="game-name" class="col-form-label">Nome:</label>
+                  <input type="text" class="form-control" id="recipient-name" />
+                </div>
+                <div class="mb-3">
+                  <label for="game-status" class="col-form-label"
+                    >Status:</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Selecione o status</option>
+                    <option value="1">Finalizado</option>
+                    <option value="2">Abandonado</option>
+                    <option value="3">Lista de Desejos</option>
+                    <option value="4">Jogando</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="game-status" class="col-form-label"
+                    >Plataforma:</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Selecione o status</option>
+                    <option value="1">PC</option>
+                    <option value="2">PS5</option>
+                    <option value="3">Xbox One</option>
+                    <option value="4">Nintendo Switch</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Send message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Jogo</th>
+              <th scope="col">Status</th>
+              <th scope="col">Plataforma</th>
+              <th scope="col">#</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>GTA</td>
+              <td>Finalizado</td>
+              <td>PC</td>
+              <td><button>Editar</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Counter-Strike</td>
+              <td>Abandonado</td>
+              <td>PC</td>
+              <td><button>Editar</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Red Dead Redemption</td>
+              <td>Lista de Desejos</td>
+              <td>PS5</td>
+              <td><button>Editar</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/jquery-mask-plugin/dist/jquery.mask.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="module" src="/app/pages/home/home.js"></script>
+    <script type="module" src="/app/util/shared.js"></script>
+  </body>
 </html>
